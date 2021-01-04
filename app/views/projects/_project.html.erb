@@ -1,3 +1,12 @@
 <%= turbo_frame_tag dom_id(project) do%>
-
+    <div class="card">
+        <div class="card-body">
+            <%= project.title %>
+            <%= project.body %>
+            <%= project.image %>
+            <div class="btn-group float-right">
+                <%= link_to project.link, class: 'btn btn-primary' %>
+            </div>
+        </div>
+    </div>
 <% end %>

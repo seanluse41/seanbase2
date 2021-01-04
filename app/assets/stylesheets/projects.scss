@@ -1,3 +1,9 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.project {
+
+}
+
+.blur {
+    background-color: rgba(255, 255, 255, $alpha: 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
