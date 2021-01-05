@@ -1,5 +1,6 @@
 <%= turbo_frame_tag dom_id(project) do%>
-<div class="project container">
+<div class="project">
+<div class="container">
     <div class="row">
         <%= project.title %>
     </div>
@@ -8,6 +9,10 @@
     </div>
     <div class="row">
         <%= project.body %>
+    </div>
+    <div class="btn-group d-flex justify-content-end">
+        <%= button_to "Destroy", project, method: :delete, class: "btn btn-danger"%>
+    </div>
     </div>
 </div>
 <% end %>
